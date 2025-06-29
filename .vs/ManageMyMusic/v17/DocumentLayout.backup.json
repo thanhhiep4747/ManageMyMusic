@@ -1,0 +1,256 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\ManageMyMusic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D7E2A870-9AAE-472E-8E85-3ABD47E10C24}|Actions\\ManageMyMusic.ExtractFile\\ManageMyMusic.ExtractFile.csproj|d:\\projects\\managemymusic\\actions\\managemymusic.extractfile\\excuteextractfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D7E2A870-9AAE-472E-8E85-3ABD47E10C24}|Actions\\ManageMyMusic.ExtractFile\\ManageMyMusic.ExtractFile.csproj|solutionrelative:actions\\managemymusic.extractfile\\excuteextractfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|d:\\projects\\managemymusic\\managemymusic\\actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|solutionrelative:managemymusic\\actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|d:\\projects\\managemymusic\\managemymusic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|solutionrelative:managemymusic\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|d:\\projects\\managemymusic\\managemymusic\\iactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|solutionrelative:managemymusic\\iactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60B1A1A5-C9B7-4863-9705-C1680E8F45DC}|Data{60B1A1A5-C9B7-4863-9705-C1680E8F45DC}|D:\\Projects\\ManageMyMusic\\Data\\MusicStructure.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{60B1A1A5-C9B7-4863-9705-C1680E8F45DC}|Data{60B1A1A5-C9B7-4863-9705-C1680E8F45DC}|solutionrelative:Data\\MusicStructure.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|d:\\projects\\managemymusic\\managemymusic\\managemymusic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|solutionrelative:managemymusic\\managemymusic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7E2A870-9AAE-472E-8E85-3ABD47E10C24}|Actions\\ManageMyMusic.ExtractFile\\ManageMyMusic.ExtractFile.csproj|d:\\projects\\managemymusic\\actions\\managemymusic.extractfile\\managemymusic.extractfile.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D7E2A870-9AAE-472E-8E85-3ABD47E10C24}|Actions\\ManageMyMusic.ExtractFile\\ManageMyMusic.ExtractFile.csproj|solutionrelative:actions\\managemymusic.extractfile\\managemymusic.extractfile.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E5280C-397A-4F6F-BAE0-A904D1FDAD71}|Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj|d:\\projects\\managemymusic\\common\\managemymusic.core\\imusicconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E5280C-397A-4F6F-BAE0-A904D1FDAD71}|Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj|solutionrelative:common\\managemymusic.core\\imusicconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E5280C-397A-4F6F-BAE0-A904D1FDAD71}|Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj|d:\\projects\\managemymusic\\common\\managemymusic.core\\musicconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E5280C-397A-4F6F-BAE0-A904D1FDAD71}|Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj|solutionrelative:common\\managemymusic.core\\musicconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E5280C-397A-4F6F-BAE0-A904D1FDAD71}|Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj|d:\\projects\\managemymusic\\common\\managemymusic.core\\configuration\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E5280C-397A-4F6F-BAE0-A904D1FDAD71}|Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj|solutionrelative:common\\managemymusic.core\\configuration\\appsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E5280C-397A-4F6F-BAE0-A904D1FDAD71}|Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj|d:\\projects\\managemymusic\\common\\managemymusic.core\\configuration\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08E5280C-397A-4F6F-BAE0-A904D1FDAD71}|Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj|solutionrelative:common\\managemymusic.core\\configuration\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08E5280C-397A-4F6F-BAE0-A904D1FDAD71}|Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj|d:\\projects\\managemymusic\\common\\managemymusic.core\\managemymusic.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{08E5280C-397A-4F6F-BAE0-A904D1FDAD71}|Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj|solutionrelative:common\\managemymusic.core\\managemymusic.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|d:\\projects\\managemymusic\\managemymusic\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|solutionrelative:managemymusic\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\Program.cs",
+              "RelativeDocumentMoniker": "ManageMyMusic\\Program.cs",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\Program.cs",
+              "RelativeToolTip": "ManageMyMusic\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T21:50:48.067Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExcuteExtractFile.cs",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\Actions\\ManageMyMusic.ExtractFile\\ExcuteExtractFile.cs",
+              "RelativeDocumentMoniker": "Actions\\ManageMyMusic.ExtractFile\\ExcuteExtractFile.cs",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\Actions\\ManageMyMusic.ExtractFile\\ExcuteExtractFile.cs",
+              "RelativeToolTip": "Actions\\ManageMyMusic.ExtractFile\\ExcuteExtractFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T16:19:53.306Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Actions.cs",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\Actions.cs",
+              "RelativeDocumentMoniker": "ManageMyMusic\\Actions.cs",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\Actions.cs",
+              "RelativeToolTip": "ManageMyMusic\\Actions.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T16:32:06.324Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IActions.cs",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\IActions.cs",
+              "RelativeDocumentMoniker": "ManageMyMusic\\IActions.cs",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\IActions.cs",
+              "RelativeToolTip": "ManageMyMusic\\IActions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T16:31:35.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MusicStructure.json",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\Data\\MusicStructure.json",
+              "RelativeDocumentMoniker": "Data\\MusicStructure.json",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\Data\\MusicStructure.json",
+              "RelativeToolTip": "Data\\MusicStructure.json",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAkwNsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-28T16:03:44.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManageMyMusic.ExtractFile.csproj",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\Actions\\ManageMyMusic.ExtractFile\\ManageMyMusic.ExtractFile.csproj",
+              "RelativeDocumentMoniker": "Actions\\ManageMyMusic.ExtractFile\\ManageMyMusic.ExtractFile.csproj",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\Actions\\ManageMyMusic.ExtractFile\\ManageMyMusic.ExtractFile.csproj",
+              "RelativeToolTip": "Actions\\ManageMyMusic.ExtractFile\\ManageMyMusic.ExtractFile.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-28T16:03:23.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MusicConfiguration.cs",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\MusicConfiguration.cs",
+              "RelativeDocumentMoniker": "Common\\ManageMyMusic.Core\\MusicConfiguration.cs",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\MusicConfiguration.cs",
+              "RelativeToolTip": "Common\\ManageMyMusic.Core\\MusicConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T22:20:16.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IMusicConfiguration.cs",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\IMusicConfiguration.cs",
+              "RelativeDocumentMoniker": "Common\\ManageMyMusic.Core\\IMusicConfiguration.cs",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\IMusicConfiguration.cs",
+              "RelativeToolTip": "Common\\ManageMyMusic.Core\\IMusicConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T22:19:49.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConnectionStrings.cs",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\Configuration\\ConnectionStrings.cs",
+              "RelativeDocumentMoniker": "Common\\ManageMyMusic.Core\\Configuration\\ConnectionStrings.cs",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\Configuration\\ConnectionStrings.cs",
+              "RelativeToolTip": "Common\\ManageMyMusic.Core\\Configuration\\ConnectionStrings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T22:18:05.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ManageMyMusic.Core.csproj",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj",
+              "RelativeDocumentMoniker": "Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj",
+              "RelativeToolTip": "Common\\ManageMyMusic.Core\\ManageMyMusic.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-27T22:13:50.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\appsettings.json",
+              "RelativeDocumentMoniker": "ManageMyMusic\\appsettings.json",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\appsettings.json",
+              "RelativeToolTip": "ManageMyMusic\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-27T22:03:14.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppSettings.cs",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\Configuration\\AppSettings.cs",
+              "RelativeDocumentMoniker": "Common\\ManageMyMusic.Core\\Configuration\\AppSettings.cs",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\Configuration\\AppSettings.cs",
+              "RelativeToolTip": "Common\\ManageMyMusic.Core\\Configuration\\AppSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T22:03:03.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManageMyMusic.csproj",
+              "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\ManageMyMusic.csproj",
+              "RelativeDocumentMoniker": "ManageMyMusic\\ManageMyMusic.csproj",
+              "ToolTip": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\ManageMyMusic.csproj",
+              "RelativeToolTip": "ManageMyMusic\\ManageMyMusic.csproj",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-27T21:58:09.964Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
