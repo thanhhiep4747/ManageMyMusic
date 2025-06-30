@@ -1,10 +1,8 @@
 ﻿using ManageMyMusic.Core;
 using ManageMyMusic.Core.Configuration;
-using ManageMyMusic.ExtractFile.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using ManageMyMusic.ExtractFile;
 
 namespace ManageMyMusic
 {
@@ -12,6 +10,8 @@ namespace ManageMyMusic
     {
         static async Task Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;// Support for displaying Vietnamese characters (can be removed if not needed)
+
             var host = CreateHostBuilder(args).Build();
 
             using (var scope = host.Services.CreateScope())
@@ -60,7 +60,6 @@ namespace ManageMyMusic
 
                     services.AddSingleton<IMusicConfiguration, MusicConfiguration>();
 
-                    services.AddScoped<IExcuteExtractFile, ExcuteExtractFile>();
                     services.AddScoped<IActions, Actions>();
                 });
     }
