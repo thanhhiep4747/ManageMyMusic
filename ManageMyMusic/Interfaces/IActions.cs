@@ -1,4 +1,4 @@
-﻿namespace ManageMyMusic
+﻿namespace ManageMyMusic.Interfaces
 {
     public interface IActions
     {

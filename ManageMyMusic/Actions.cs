@@ -1,6 +1,11 @@
 ﻿using ManageMyMusic.Core;
+using ManageMyMusic.Core.Extensions;
+using ManageMyMusic.Interfaces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.IO;
+using System.IO.Compression;
+using System.Text;
 
 namespace ManageMyMusic
 {
@@ -26,6 +31,8 @@ namespace ManageMyMusic
             await GetAndCreateStructureFolderAsync("MusicStructure.json");
 
             GetAllZipFilesPath();
+
+            ExcuteManageMergeMusicFile(m_MusicConfiguration.AppSettings.SourceFolder);
         }
 
         #region Step 1: Verify Music Structure
@@ -143,10 +150,9 @@ namespace ManageMyMusic
         #endregion
 
 
-        #region Verify and Excute Zip Files
-        public IEnumerable<string> GetAllZipFilesPath()
+        #region Step 2: Verify and Excute Zip Files
+        public void GetAllZipFilesPath()
         {
-            var listZipFiles = new List<string>();
             var folderPath = m_MusicConfiguration.AppSettings.SourceFolder;
 
             Console.WriteLine($"Searching for .zip files in '{folderPath}'...");
@@ -163,7 +169,7 @@ namespace ManageMyMusic
                     {
                         Console.WriteLine($"- {filePath}");
 
-                        listZipFiles.Add(filePath);
+                        ExtractZipFile(filePath, folderPath);
                     }
                 }
                 else
@@ -183,13 +189,188 @@ namespace ManageMyMusic
             {
                 Console.WriteLine($"An unexpected error occurred: {ex.Message}");
             }
-
-            Console.WriteLine("\nPress any key to exit.");
-            Console.ReadKey();
-
-
-            return listZipFiles;
         }
+
+        private bool ExtractZipFile(string zipFilePath, string destinationExtracting)
+        {
+            if (!File.Exists(zipFilePath))
+                return false;
+
+            var zipFileName = Path.GetFileName(zipFilePath);
+
+            try
+            {
+                Console.WriteLine($"Extracting '{zipFileName}' to '{destinationExtracting}'...");
+                ZipFile.ExtractToDirectory(zipFilePath, destinationExtracting, true); // 'true' to overwrite existing files
+
+                Console.WriteLine($"Successfully extracted '{zipFileName}'.");
+
+                Console.WriteLine($"Deleting original zip file '{zipFileName}'...");
+                File.Delete(zipFilePath);
+                Console.WriteLine($"Successfully deleted '{zipFileName}'.");
+
+                return true;
+            }
+            catch (UnauthorizedAccessException)
+            {
+                Console.WriteLine($"Error: Unauthorized access during zip operation. Please check permissions for '{zipFilePath}' or '{destinationExtracting}'.");
+                return false;
+            }
+            catch (IOException ex)
+            {
+                Console.WriteLine($"I/O error during zip operation: {ex.Message}");
+                return false;
+            }
+            catch (InvalidDataException ex)
+            {
+                Console.WriteLine($"Error: The zip file '{zipFileName}' is corrupted or not a valid zip archive: {ex.Message}");
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred during zip operations: {ex.Message}");
+                return false;
+            }
+        }
+        #endregion
+
+        #region Step 3: 
+
+        public void ExcuteManageMergeMusicFile(string path)
+        {
+            GetAllMusicFileInPath(path);
+            GetAllFolderInPath(path);
+        }
+
+        public void GetAllFolderInPath(string path)
+        {
+            try
+            {
+                string[] directories = Directory.GetDirectories(path);
+
+                Console.WriteLine($"Folders in {path}:");
+                foreach (string dir in directories)
+                {
+                    Console.WriteLine(dir);
+                    ExcuteManageMergeMusicFile(dir);
+                }
+            }
+            catch (DirectoryNotFoundException)
+            {
+                Console.WriteLine($"Error: Directory '{path}' not found.");
+            }
+            catch (UnauthorizedAccessException)
+            {
+                Console.WriteLine($"Error: Access to '{path}' is denied.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            }
+        }
+
+        public void GetAllMusicFileInPath(string path)
+        {
+            try
+            {
+                string[] files = Directory.GetFiles(path);
+                Console.WriteLine("\nFiles:");
+                if (files.Length == 0)
+                {
+                    Console.WriteLine($"  No files found in {path}");
+                    return;
+                }
+                foreach (string file in files)
+                {
+                    var extension = Path.GetExtension(file);
+                    if (m_MusicConfiguration.AppSettings.ExtensionMusicFiles.Contains(extension))
+                    {
+                        Console.WriteLine($"  {Path.GetFileName(file)}"); // Just the file name
+                        ReadAudioFileInfo(file);
+                    }
+                }
+            }
+            catch (DirectoryNotFoundException)
+            {
+                Console.WriteLine($"Error: Directory '{path}' not found.");
+            }
+            catch (UnauthorizedAccessException)
+            {
+                Console.WriteLine($"Error: Access to '{path}' is denied.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            }
+        }
+
+        public void ReadAudioFileInfo(string filePath)
+        {
+            if (!File.Exists(filePath))
+            {
+                Console.WriteLine($"Error: File not found at '{filePath}'");
+                return;
+            }
+
+            try
+            {
+                // Create a TagLib.File object from the file path
+                using (TagLib.File file = TagLib.File.Create(filePath))
+                {
+                    Console.WriteLine($"File: {Path.GetFileName(filePath)}");
+
+                    // --- Common Audio Properties ---
+                    Console.WriteLine($"  Duration: {file.Properties.Duration}");
+                    Console.WriteLine($"  Sample Rate: {file.Properties.AudioSampleRate} Hz");
+                    Console.WriteLine($"  Channels: {file.Properties.AudioChannels}");
+                    Console.WriteLine($"  Bits Per Sample: {file.Properties.BitsPerSample}");
+                    Console.WriteLine($"  Codecs: {string.Join(", ", file.Properties.Codecs)}");
+                    Console.WriteLine($"  Media Types: {file.Properties.MediaTypes}");
+
+                    // --- Tag (Metadata) Information (More relevant for FLAC, MP3, etc.) ---
+                    if (file.Tag != null)
+                    {
+                        Console.WriteLine("\n  --- Metadata (Tags) ---");
+                        Console.WriteLine($"    Title: {FixingErrorUtf8Format(file.Tag.Title)}");
+                        Console.WriteLine($"    Artist(s): {FixingErrorUtf8Format(string.Join(", ", file.Tag.Performers))}");
+                        Console.WriteLine($"    Album: {FixingErrorUtf8Format(file.Tag.Album)}");
+                        Console.WriteLine($"    Year: {file.Tag.Year}");
+                        Console.WriteLine($"    Genre(s): {FixingErrorUtf8Format(string.Join(", ", file.Tag.Genres))}");
+                        Console.WriteLine($"    Track: {file.Tag.Track}");
+                        Console.WriteLine($"    Disc: {file.Tag.Disc}");
+                        Console.WriteLine($"    Comment: {FixingErrorUtf8Format(file.Tag.Comment)}");
+                        Console.WriteLine($"    Lyrics: {FixingErrorUtf8Format(file.Tag.Lyrics)}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("\n  No extensive metadata (tags) found for this file type.");
+                    }
+                }
+            }
+            catch (TagLib.UnsupportedFormatException ex)
+            {
+                Console.WriteLine($"Error: '{filePath}' is not a supported audio format. {ex.Message}");
+            }
+            catch (TagLib.CorruptFileException ex)
+            {
+                Console.WriteLine($"Error: '{filePath}' is a corrupt file. {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred while processing '{filePath}': {ex.Message}");
+            }
+        }
+
+        private string FixingErrorUtf8Format(string source)
+        {
+            byte[] rawBytes = Encoding.Default.GetBytes(source); // Get bytes based on current system's default encoding (often similar to 1252)
+                                                                   // Or specifically try: byte[] rawBytes = Encoding.GetEncoding(1252).GetBytes(rawTitle);
+
+            string fixed_UTF8 = Encoding.UTF8.GetString(rawBytes);
+
+            return fixed_UTF8;
+        }
+
         #endregion
     }
 }

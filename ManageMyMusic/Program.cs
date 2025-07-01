@@ -1,5 +1,6 @@
 ﻿using ManageMyMusic.Core;
 using ManageMyMusic.Core.Configuration;
+using ManageMyMusic.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
