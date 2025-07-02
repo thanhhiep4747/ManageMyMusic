@@ -26,9 +26,6 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Data\MusicData.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="Data\MusicStructure.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

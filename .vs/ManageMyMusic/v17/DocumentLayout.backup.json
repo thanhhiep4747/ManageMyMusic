@@ -56,23 +56,10 @@
               "RelativeDocumentMoniker": "ManageMyMusic\\Actions.cs",
               "ToolTip": "D:\\PersonalData\\Project\\My Projects\\ManageMyMusic\\ManageMyMusic\\Actions.cs",
               "RelativeToolTip": "ManageMyMusic\\Actions.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAgwDMAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAgwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T01:39:05.962Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StringExtensions.cs",
-              "DocumentMoniker": "D:\\PersonalData\\Project\\My Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\Extensions\\StringExtensions.cs",
-              "RelativeDocumentMoniker": "Common\\ManageMyMusic.Core\\Extensions\\StringExtensions.cs",
-              "ToolTip": "D:\\PersonalData\\Project\\My Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\Extensions\\StringExtensions.cs",
-              "RelativeToolTip": "Common\\ManageMyMusic.Core\\Extensions\\StringExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAYwAcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T02:19:55.148Z",
               "EditorCaption": ""
             },
             {
@@ -102,6 +89,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{9d2016e5-735e-4d98-a9af-fff43b64a526}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StringExtensions.cs",
+              "DocumentMoniker": "D:\\PersonalData\\Project\\My Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\Extensions\\StringExtensions.cs",
+              "RelativeDocumentMoniker": "Common\\ManageMyMusic.Core\\Extensions\\StringExtensions.cs",
+              "ToolTip": "D:\\PersonalData\\Project\\My Projects\\ManageMyMusic\\Common\\ManageMyMusic.Core\\Extensions\\StringExtensions.cs",
+              "RelativeToolTip": "Common\\ManageMyMusic.Core\\Extensions\\StringExtensions.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswDEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T02:19:55.148Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

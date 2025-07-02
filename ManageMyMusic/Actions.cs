@@ -3,7 +3,6 @@ using ManageMyMusic.Core.Extensions;
 using ManageMyMusic.Interfaces;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System.IO;
 using System.IO.Compression;
 using System.Text;
 
@@ -364,11 +363,79 @@ namespace ManageMyMusic
         private string FixingErrorUtf8Format(string source)
         {
             byte[] rawBytes = Encoding.Default.GetBytes(source); // Get bytes based on current system's default encoding (often similar to 1252)
-                                                                   // Or specifically try: byte[] rawBytes = Encoding.GetEncoding(1252).GetBytes(rawTitle);
+                                                                 // Or specifically try: byte[] rawBytes = Encoding.GetEncoding(1252).GetBytes(rawTitle);
 
             string fixed_UTF8 = Encoding.UTF8.GetString(rawBytes);
 
             return fixed_UTF8;
+        }
+
+        #endregion
+
+        #region Step 4: Merge Music Files 
+        public static void CopyRenameAndDeleteOriginal(string sourceFilePath, string destinationDirectory, bool replaceIfExists)
+        {
+            if (!File.Exists(sourceFilePath))
+            {
+                Console.WriteLine($"Error: Source file not found at '{sourceFilePath}'. Aborting operation.");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(destinationDirectory))
+            {
+                Console.WriteLine("Error: Destination directory cannot be empty. Aborting operation.");
+                return;
+            }
+
+            if (!Directory.Exists(destinationDirectory))
+            {
+                try
+                {
+                    Directory.CreateDirectory(destinationDirectory);
+                    Console.WriteLine($"Created destination directory: '{destinationDirectory}'");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error creating destination directory '{destinationDirectory}': {ex.Message}");
+                    return;
+                }
+            }
+
+            string newFileName = Path.GetFileName(sourceFilePath).RemoveDiacriticsVietnamese();
+            string destinationFilePath = Path.Combine(destinationDirectory, newFileName);
+
+            Console.WriteLine($"Attempting to copy '{sourceFilePath}' to '{destinationFilePath}'...");
+
+            try
+            {
+                File.Copy(sourceFilePath, destinationFilePath, replaceIfExists);
+                Console.WriteLine($"Successfully copied file to: '{destinationFilePath}'");
+
+                Console.WriteLine($"Attempting to delete original file: '{sourceFilePath}'...");
+                File.Delete(sourceFilePath);
+                Console.WriteLine($"Successfully deleted original file: '{sourceFilePath}'");
+            }
+            catch (FileNotFoundException ex)
+            {
+                Console.WriteLine($"Error: File not found during copy/delete. {ex.Message}");
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                Console.WriteLine($"Error: Access denied during file operation. Check permissions. {ex.Message}");
+            }
+            catch (IOException ex) when (ex.Message.Contains("already exists") && ex.HResult == -2147024816)
+            {
+                // Verify new file high quality from existing file or not, if yes then replace
+                Console.WriteLine($"Error: Destination file '{destinationFilePath}' already exists and overwrite was not allowed. {ex.Message}");
+            }
+            catch (IOException ex)
+            {
+                Console.WriteLine($"Error during file operation (IO related): {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An unexpected error occurred: {ex.Message}");
+            }
         }
 
         #endregion

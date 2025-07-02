@@ -1,0 +1,14 @@
+﻿[
+    {
+        "Id": 1,
+        "RegionName": "Nhac Viet"
+    },
+    {
+        "Id": 2,
+        "RegionName": "Nhac Hoa"
+    },
+    {
+        "Id": 3,
+        "RegionName": "Nhac Au My"
+    }
+]
