@@ -271,7 +271,7 @@ namespace ManageMyMusic
             foreach (var artist in musicData.Artists)
             {
                 if (string.IsNullOrWhiteSpace(artist.ArtistName)) continue;
-
+                
                 var existing = CompareEqualStringIgnoreSpecialChar(artistName, artist.ArtistName);
                 if (existing)
                 {
@@ -304,7 +304,7 @@ namespace ManageMyMusic
             var sourceStrings = (sourceString.Trim()).RemoveDiacriticsVietnamese().ToLower().ToCharArray();
             var compareStrings = (compareString.Trim()).RemoveDiacriticsVietnamese().ToLower().ToCharArray();
 
-            if (sourceString.Length != compareString.Length)
+            if (sourceStrings.Count() != compareStrings.Count())
                 return false;
 
             for (int i = 0; i < compareStrings.Count(); i++)

@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|solutionrelative:managemymusic\\actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|d:\\projects\\managemymusic\\managemymusic\\data\\musicartist.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|solutionrelative:managemymusic\\data\\musicartist.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|d:\\projects\\managemymusic\\managemymusic\\musicdataexcute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|solutionrelative:managemymusic\\musicdataexcute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|d:\\projects\\managemymusic\\managemymusic\\data\\musictype.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|solutionrelative:managemymusic\\data\\musictype.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|d:\\projects\\managemymusic\\managemymusic\\data\\musicartist.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|solutionrelative:managemymusic\\data\\musicartist.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FB7AA1D-69EB-4FCB-B94F-AADE1DF750C3}|ManageMyMusic\\ManageMyMusic.csproj|d:\\projects\\managemymusic\\managemymusic\\data\\musicalbum.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -75,8 +75,7 @@
               "ViewState": "AgIAACQAAAAAAAAAAAAqwCgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-27T21:50:48.067Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -86,7 +85,7 @@
               "RelativeDocumentMoniker": "ManageMyMusic\\Actions.cs",
               "ToolTip": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\Actions.cs",
               "RelativeToolTip": "ManageMyMusic\\Actions.cs",
-              "ViewState": "AgIAADsBAAAAAAAAAAAtwFEBAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAEYBAAAAAAAAAAAUwE8BAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-28T16:32:06.324Z",
               "IsPinned": true,
@@ -94,13 +93,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MusicDataExcute.cs",
               "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\MusicDataExcute.cs",
               "RelativeDocumentMoniker": "ManageMyMusic\\MusicDataExcute.cs",
               "ToolTip": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\MusicDataExcute.cs",
               "RelativeToolTip": "ManageMyMusic\\MusicDataExcute.cs",
-              "ViewState": "AgIAABUBAAAAAAAAAAAawDYBAAANAAAAAAAAAA==",
+              "ViewState": "AgIAANYAAAAAAAAAAAAkwPYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-03T03:39:47.292Z",
               "IsPinned": true,
@@ -108,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MusicType.json",
               "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\Data\\MusicType.json",
               "RelativeDocumentMoniker": "ManageMyMusic\\Data\\MusicType.json",
@@ -117,18 +116,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-03T10:09:05.304Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MusicArtist.json",
               "DocumentMoniker": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\Data\\MusicArtist.json",
               "RelativeDocumentMoniker": "ManageMyMusic\\Data\\MusicArtist.json",
               "ToolTip": "D:\\Projects\\ManageMyMusic\\ManageMyMusic\\Data\\MusicArtist.json",
               "RelativeToolTip": "ManageMyMusic\\Data\\MusicArtist.json",
-              "ViewState": "AgIAAGcBAAAAAAAAAAAAAIcBAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAHYBAAAAAAAAAAAMwIwBAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-03T09:59:59.551Z",
               "IsPinned": true,
@@ -145,8 +143,7 @@
               "ViewState": "AgIAAA0CAAAAAAAAAAAewCcCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-03T10:00:05.219Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -182,8 +179,7 @@
               "RelativeToolTip": "ManageMyMusic\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-03T10:18:01.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T10:18:01.768Z"
             },
             {
               "$type": "Document",
@@ -195,8 +191,7 @@
               "RelativeToolTip": "ManageMyMusic\\Data\\MusicStructure.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-03T10:00:03.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T10:00:03.687Z"
             },
             {
               "$type": "Document",
@@ -208,8 +203,7 @@
               "RelativeToolTip": "ManageMyMusic\\Data\\MusicRegion.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-03T10:00:02.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T10:00:02.114Z"
             },
             {
               "$type": "Document",
@@ -221,8 +215,7 @@
               "RelativeToolTip": "ManageMyMusic\\Models\\MusicStructureResponse.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwBkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T09:42:32.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T09:42:32.463Z"
             },
             {
               "$type": "Document",
@@ -234,8 +227,7 @@
               "RelativeToolTip": "ManageMyMusic\\Models\\MusicDataModels.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T09:30:45.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T09:30:45.934Z"
             },
             {
               "$type": "Document",
@@ -247,8 +239,7 @@
               "RelativeToolTip": "ManageMyMusic\\Enums\\ComparisonResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T08:50:55.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T08:50:55.636Z"
             }
           ]
         }

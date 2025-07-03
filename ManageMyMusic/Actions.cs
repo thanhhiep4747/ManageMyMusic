@@ -5,9 +5,7 @@ using ManageMyMusic.Interfaces;
 using ManageMyMusic.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
 using System.IO.Compression;
-using System.Text;
 
 namespace ManageMyMusic
 {
@@ -332,10 +330,19 @@ namespace ManageMyMusic
 
                     if (file.Tag != null)
                     {
-                        if(file.Tag.Performers != null && file.Tag.Performers.Any())
+                        if (file.Tag.Performers != null && file.Tag.Performers.Any())
                         {
-                            foreach(var artistName in file.Tag.Performers)
+                            for (int i = 0; i < file.Tag.Performers.Count(); i++)
                             {
+                                string artistName = file.Tag.Performers[i];
+                                bool isLast = (i == file.Tag.Performers.Count() - 1);
+
+                                bool deletesourcefile = false;
+                                if (isLast)
+                                {
+                                    deletesourcefile = true;
+                                }
+
                                 string albumName = file.Tag.Album;
 
                                 var musicStructureResponse = m_musicDataExcute.MergeAlbumIntoStructure(artistName, albumName, m_MusicData);
@@ -347,7 +354,7 @@ namespace ManageMyMusic
                                         Directory.CreateDirectory(destinationDirectory);
                                     }
 
-                                    CopyRenameAndDeleteOriginal(filePath, destinationDirectory, false);
+                                    CopyRenameAndDeleteOriginal(filePath, destinationDirectory, deletesourcefile, false);
                                 }
                             }
                         }
@@ -371,7 +378,7 @@ namespace ManageMyMusic
         #endregion
 
         #region Step 4: Merge Music Files 
-        public void CopyRenameAndDeleteOriginal(string sourceFilePath, string destinationDirectory, bool replaceIfExists = false)
+        public void CopyRenameAndDeleteOriginal(string sourceFilePath, string destinationDirectory, bool deleteSourceFile, bool replaceIfExists = false)
         {
             if (!File.Exists(sourceFilePath))
             {
@@ -409,9 +416,12 @@ namespace ManageMyMusic
                 File.Copy(sourceFilePath, destinationFilePath, replaceIfExists);
                 Console.WriteLine($"Successfully copied file to: '{destinationFilePath}'");
 
-                Console.WriteLine($"Attempting to delete original file: '{sourceFilePath}'...");
-                File.Delete(sourceFilePath);
-                Console.WriteLine($"Successfully deleted original file: '{sourceFilePath}'");
+                if (deleteSourceFile)
+                {
+                    Console.WriteLine($"Attempting to delete original file: '{sourceFilePath}'...");
+                    File.Delete(sourceFilePath);
+                    Console.WriteLine($"Successfully deleted original file: '{sourceFilePath}'");
+                }
             }
             catch (FileNotFoundException ex)
             {
@@ -433,7 +443,7 @@ namespace ManageMyMusic
 
                 var resultCompare = CompareFlacFiles(TagLib_New, TabLib_Old);
                 if (resultCompare == ComparisonResult.NewFileBetter)
-                    CopyRenameAndDeleteOriginal(sourceFilePath, destinationDirectory, true);
+                    CopyRenameAndDeleteOriginal(sourceFilePath, destinationDirectory, deleteSourceFile, true);
                 else
                     File.Delete(sourceFilePath);
 

@@ -390,5 +390,20 @@
     "Id": 77,
     "TypeId": 1,
     "ArtistName": "Quang Le"
+  },
+  {
+    "Id": 78,
+    "TypeId": 2,
+    "ArtistName": "Vo Ha Tram"
+  },
+  {
+    "Id": 79,
+    "TypeId": 2,
+    "ArtistName": "Van Quang Long"
+  },
+  {
+    "Id": 80,
+    "TypeId": 2,
+    "ArtistName": "Cam Ly"
   }
 ]
