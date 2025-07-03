@@ -1,22 +1,27 @@
 ﻿[
-    {
-        "Id": 1,
-        "RegionId": 1,
-        "TypeName": "Bolero"
-    },
-    {
-        "Id": 2,
-        "RegionId": 1,
-        "TypeName": "Nhac Tre 8x 9x"
-    },
-    {
-        "Id": 3,
-        "RegionId": 1,
-        "TypeName": "Xuan"
-    },
-    {
-        "Id": 4,
-        "RegionId": 1,
-        "TypeName": "Thanh Ca"
-    }
+  {
+    "Id": 1,
+    "RegionId": 1,
+    "TypeName": "Bolero"
+  },
+  {
+    "Id": 2,
+    "RegionId": 1,
+    "TypeName": "Nhac Tre 8x 9x"
+  },
+  {
+    "Id": 3,
+    "RegionId": 1,
+    "TypeName": "Xuan"
+  },
+  {
+    "Id": 4,
+    "RegionId": 1,
+    "TypeName": "Thanh Ca"
+  },
+  {
+    "Id": 5,
+    "RegionId": 1,
+    "TypeName": "Nhac Trinh Cong Son"
+  }
 ]

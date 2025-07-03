@@ -1,1 +1,552 @@
-﻿
+﻿[
+  {
+    "Id": 1,
+    "ArtistId": 42,
+    "AlbumName": "NHIÊN"
+  },
+  {
+    "Id": 2,
+    "ArtistId": 40,
+    "AlbumName": "Mua Xuan"
+  },
+  {
+    "Id": 3,
+    "ArtistId": 67,
+    "AlbumName": "Xuan Ca"
+  },
+  {
+    "Id": 4,
+    "ArtistId": 15,
+    "AlbumName": "Hạnh phúc đầu xuân"
+  },
+  {
+    "Id": 5,
+    "ArtistId": 17,
+    "AlbumName": "Tháng Năm Bên Nhau"
+  },
+  {
+    "Id": 6,
+    "ArtistId": 28,
+    "AlbumName": "Chắp Vá"
+  },
+  {
+    "Id": 7,
+    "ArtistId": 28,
+    "AlbumName": "Em Đau Lắm Đấy"
+  },
+  {
+    "Id": 8,
+    "ArtistId": 28,
+    "AlbumName": "Nguyện Yêu"
+  },
+  {
+    "Id": 9,
+    "ArtistId": 28,
+    "AlbumName": "Níu Duyên Không Thành"
+  },
+  {
+    "Id": 10,
+    "ArtistId": 28,
+    "AlbumName": "Sau Này Nếu Có Thương Em"
+  },
+  {
+    "Id": 11,
+    "ArtistId": 28,
+    "AlbumName": "Thuyền Không Đợi Bến"
+  },
+  {
+    "Id": 12,
+    "ArtistId": 43,
+    "AlbumName": "Le Hieu Vol- 3"
+  },
+  {
+    "Id": 13,
+    "ArtistId": 45,
+    "AlbumName": "Giay Phut Chia Xa - Ao Hoa Ben Nguoi"
+  },
+  {
+    "Id": 14,
+    "ArtistId": 48,
+    "AlbumName": "Như Cánh Vạc Bay"
+  },
+  {
+    "Id": 15,
+    "ArtistId": 55,
+    "AlbumName": "Don Xuan"
+  },
+  {
+    "Id": 16,
+    "ArtistId": 62,
+    "AlbumName": "Big Girls Don-t Cry"
+  },
+  {
+    "Id": 17,
+    "ArtistId": 62,
+    "AlbumName": "Em Không Là Duy Nhất"
+  },
+  {
+    "Id": 18,
+    "ArtistId": 62,
+    "AlbumName": "KAHEDA"
+  },
+  {
+    "Id": 19,
+    "ArtistId": 62,
+    "AlbumName": "Walk Away"
+  },
+  {
+    "Id": 20,
+    "ArtistId": 70,
+    "AlbumName": "Trịnh Công Sơn 15 năm đường xa vạn dặm"
+  },
+  {
+    "Id": 21,
+    "ArtistId": 71,
+    "AlbumName": "Huế - Sài Gòn - Hà Nội"
+  },
+  {
+    "Id": 22,
+    "ArtistId": 71,
+    "AlbumName": "Xin Mặt Trời Ngủ Yên"
+  },
+  {
+    "Id": 23,
+    "ArtistId": 71,
+    "AlbumName": "Tình Khúc Phú Quang - Nỗi Nhớ Mùa Đông"
+  },
+  {
+    "Id": 24,
+    "ArtistId": 71,
+    "AlbumName": "Mot Minh"
+  },
+  {
+    "Id": 25,
+    "ArtistId": 72,
+    "AlbumName": "Chim Duoi Con Mua"
+  },
+  {
+    "Id": 26,
+    "ArtistId": 72,
+    "AlbumName": "Vol-1"
+  },
+  {
+    "Id": 27,
+    "ArtistId": 72,
+    "AlbumName": "Cõi tình Trịnh Công Sơn - Phúc âm buồn"
+  },
+  {
+    "Id": 28,
+    "ArtistId": 72,
+    "AlbumName": "Trinh Cong Son Tu The Hien"
+  },
+  {
+    "Id": 29,
+    "ArtistId": 72,
+    "AlbumName": "Tôi ơi đừng tuyệt vọng - Trịnh Vĩnh Trinh - Trịnh Công Sơn - Khánh Ly"
+  },
+  {
+    "Id": 30,
+    "ArtistId": 72,
+    "AlbumName": "Như tiếng thở dài"
+  },
+  {
+    "Id": 31,
+    "ArtistId": 72,
+    "AlbumName": "Chiếc Lá Thu Phai"
+  },
+  {
+    "Id": 32,
+    "ArtistId": 73,
+    "AlbumName": "Kiếp Dã Tràng -LP-"
+  },
+  {
+    "Id": 33,
+    "ArtistId": 73,
+    "AlbumName": "Vol-2"
+  },
+  {
+    "Id": 34,
+    "ArtistId": 73,
+    "AlbumName": "Music Box 50- Tình Ca Vũ Thành An"
+  },
+  {
+    "Id": 35,
+    "ArtistId": 71,
+    "AlbumName": "10 TInh Khuc Quoc Dung-Chuy-n H-p Tan"
+  },
+  {
+    "Id": 36,
+    "ArtistId": 26,
+    "AlbumName": "Mùa Xuân Ð-u Tiên"
+  },
+  {
+    "Id": 37,
+    "ArtistId": 40,
+    "AlbumName": "Tinh Khuc Quoc Dung-Ru Tinh Quen Lang"
+  },
+  {
+    "Id": 38,
+    "ArtistId": 2,
+    "AlbumName": "Tình Ca Qu-c Dung - Thoát Ly"
+  },
+  {
+    "Id": 39,
+    "ArtistId": 2,
+    "AlbumName": "Ðu-ng xua"
+  },
+  {
+    "Id": 40,
+    "ArtistId": 43,
+    "AlbumName": "Mot Chieu Thu -2022-"
+  },
+  {
+    "Id": 41,
+    "ArtistId": 26,
+    "AlbumName": "Bong La Ai"
+  },
+  {
+    "Id": 42,
+    "ArtistId": 26,
+    "AlbumName": "Đoá Hoa Vô Thường"
+  },
+  {
+    "Id": 43,
+    "ArtistId": 71,
+    "AlbumName": "Nhu mot loi chia tay"
+  },
+  {
+    "Id": 44,
+    "ArtistId": 70,
+    "AlbumName": "Hát Trịnh Công Sơn CD1"
+  },
+  {
+    "Id": 45,
+    "ArtistId": 43,
+    "AlbumName": "Duc Tri-Nhu Chua Bat Dau"
+  },
+  {
+    "Id": 46,
+    "ArtistId": 11,
+    "AlbumName": "Duy Manh Vinahouse - Remix by Hieu Phan DJ"
+  },
+  {
+    "Id": 47,
+    "ArtistId": 16,
+    "AlbumName": "Noi Em Gap Anh"
+  },
+  {
+    "Id": 48,
+    "ArtistId": 23,
+    "AlbumName": "Tau Dem Nam Cu"
+  },
+  {
+    "Id": 49,
+    "ArtistId": 23,
+    "AlbumName": "Nho Nhau Hoai"
+  },
+  {
+    "Id": 50,
+    "ArtistId": 25,
+    "AlbumName": "Vet Thuong Cuoi Cung"
+  },
+  {
+    "Id": 51,
+    "ArtistId": 26,
+    "AlbumName": "Niu tay nghin trung"
+  },
+  {
+    "Id": 52,
+    "ArtistId": 26,
+    "AlbumName": "Hong Nhung Vol 7 -Thuo Bong La Nguoi"
+  },
+  {
+    "Id": 53,
+    "ArtistId": 26,
+    "AlbumName": "Dai Phat Thanh Cong Cong"
+  },
+  {
+    "Id": 54,
+    "ArtistId": 26,
+    "AlbumName": "Trai Tim Hoang Vu"
+  },
+  {
+    "Id": 55,
+    "ArtistId": 19,
+    "AlbumName": "Co be ngay xua"
+  },
+  {
+    "Id": 56,
+    "ArtistId": 27,
+    "AlbumName": "Audio Space CD-Huong Giang-Hoai Cam"
+  },
+  {
+    "Id": 57,
+    "ArtistId": 13,
+    "AlbumName": "Chan troi ruc ro"
+  },
+  {
+    "Id": 58,
+    "ArtistId": 13,
+    "AlbumName": "Truyen Ngan"
+  },
+  {
+    "Id": 59,
+    "ArtistId": 13,
+    "AlbumName": "Tuyện Ngắn"
+  },
+  {
+    "Id": 60,
+    "ArtistId": 13,
+    "AlbumName": "-Ngày Hát Ðôi----"
+  },
+  {
+    "Id": 61,
+    "ArtistId": 13,
+    "AlbumName": "Anh Yêu Em -Ngày Hát Ðôi 2-"
+  },
+  {
+    "Id": 62,
+    "ArtistId": 31,
+    "AlbumName": "Khoi Thuoc Doi Cho"
+  },
+  {
+    "Id": 63,
+    "ArtistId": 31,
+    "AlbumName": "Jimmii Nguyen - The Best Of Jimmii J-C- Nguyen Collection - Tình Xua Nghia Cu"
+  },
+  {
+    "Id": 64,
+    "ArtistId": 39,
+    "AlbumName": "Mai Yeu Nguoi Thoi - Lam Nhat Tien -Asia 156-"
+  },
+  {
+    "Id": 65,
+    "ArtistId": 43,
+    "AlbumName": "Ch- Còn Nh-ng K- Ni-m"
+  },
+  {
+    "Id": 66,
+    "ArtistId": 43,
+    "AlbumName": "Tình khúc cho em"
+  },
+  {
+    "Id": 67,
+    "ArtistId": 43,
+    "AlbumName": "Da Khuc Duong Cam- Le Hieu Acoustic"
+  },
+  {
+    "Id": 68,
+    "ArtistId": 43,
+    "AlbumName": "Ph- Mùa Ðông"
+  },
+  {
+    "Id": 69,
+    "ArtistId": 43,
+    "AlbumName": "Tôi V-i Tr-i Bo Vo"
+  },
+  {
+    "Id": 70,
+    "ArtistId": 45,
+    "AlbumName": "Lý Hải - Khúc Hát Cha Yêu"
+  },
+  {
+    "Id": 71,
+    "ArtistId": 57,
+    "AlbumName": "m-tp M-TP"
+  },
+  {
+    "Id": 72,
+    "ArtistId": 60,
+    "AlbumName": "Hoang Tu Trong Mo"
+  },
+  {
+    "Id": 73,
+    "ArtistId": 63,
+    "AlbumName": "Trần Tâm Vol- 3 - Người Phụ Nữ Tự Tin- Cho Đi Cuộc Tình"
+  },
+  {
+    "Id": 74,
+    "ArtistId": 69,
+    "AlbumName": "U-c Sao Ta Chua G-p Nhau"
+  },
+  {
+    "Id": 75,
+    "ArtistId": 74,
+    "AlbumName": "Vut Bay"
+  },
+  {
+    "Id": 76,
+    "ArtistId": 74,
+    "AlbumName": "Yesterday - Now- Vol- 3"
+  },
+  {
+    "Id": 77,
+    "ArtistId": 74,
+    "AlbumName": "Hoàng Hôn Thức Giấc- Vol- 4"
+  },
+  {
+    "Id": 78,
+    "ArtistId": 74,
+    "AlbumName": "Dường Như Ta Đã- Vol- 4-5"
+  },
+  {
+    "Id": 79,
+    "ArtistId": 74,
+    "AlbumName": "Tâm 9"
+  },
+  {
+    "Id": 80,
+    "ArtistId": 74,
+    "AlbumName": "Vì Em Tất Cả"
+  },
+  {
+    "Id": 81,
+    "ArtistId": 74,
+    "AlbumName": "Mỹ Tâm Vol- 7 To The Beat"
+  },
+  {
+    "Id": 82,
+    "ArtistId": 75,
+    "AlbumName": "Bao Gio Em Quen"
+  },
+  {
+    "Id": 83,
+    "ArtistId": 75,
+    "AlbumName": "Lệ Xa Người"
+  },
+  {
+    "Id": 84,
+    "ArtistId": 75,
+    "AlbumName": "Đến Sau -Acoustic Lofi Chill- -Acoustic-"
+  },
+  {
+    "Id": 85,
+    "ArtistId": 74,
+    "AlbumName": "Mãi Yêu- Vol- 1"
+  },
+  {
+    "Id": 86,
+    "ArtistId": 74,
+    "AlbumName": "Đâu Chỉ Riêng Em- Vol- 2"
+  },
+  {
+    "Id": 87,
+    "ArtistId": 74,
+    "AlbumName": "Yesterday - Now"
+  },
+  {
+    "Id": 88,
+    "ArtistId": 74,
+    "AlbumName": "Vút Bay- Vol- 5"
+  },
+  {
+    "Id": 89,
+    "ArtistId": 74,
+    "AlbumName": "Trở Lại- Vol- 6"
+  },
+  {
+    "Id": 90,
+    "ArtistId": 74,
+    "AlbumName": "My Tam Vol- 8"
+  },
+  {
+    "Id": 91,
+    "ArtistId": 76,
+    "AlbumName": "Nhạc Tuyển Đan Trường Vol 4"
+  },
+  {
+    "Id": 92,
+    "ArtistId": 76,
+    "AlbumName": "Phi Điểu Và Ve Sầu"
+  },
+  {
+    "Id": 93,
+    "ArtistId": 76,
+    "AlbumName": "Đan Trường Vol-5 - The Best Of Đan Trường"
+  },
+  {
+    "Id": 94,
+    "ArtistId": 76,
+    "AlbumName": "Đan Trường Vol- 4 - Best Collection"
+  },
+  {
+    "Id": 95,
+    "ArtistId": 76,
+    "AlbumName": "Đan Trường Vol- 12 - Bông Hồng Cài Áo"
+  },
+  {
+    "Id": 96,
+    "ArtistId": 76,
+    "AlbumName": "Đan Trường Vol- 1 - Album Nhạc Tuyển"
+  },
+  {
+    "Id": 97,
+    "ArtistId": 76,
+    "AlbumName": "Nếu Phôi Pha Ngày Mai"
+  },
+  {
+    "Id": 98,
+    "ArtistId": 76,
+    "AlbumName": "Tình Đơn Phương"
+  },
+  {
+    "Id": 99,
+    "ArtistId": 76,
+    "AlbumName": "Ướt Lem Chữ Đời"
+  },
+  {
+    "Id": 100,
+    "ArtistId": 76,
+    "AlbumName": "Thương Thầm"
+  },
+  {
+    "Id": 101,
+    "ArtistId": 77,
+    "AlbumName": "Dap Vo Cay Dan"
+  },
+  {
+    "Id": 102,
+    "ArtistId": 77,
+    "AlbumName": "Chim Sao Ngay Xua"
+  },
+  {
+    "Id": 103,
+    "ArtistId": 77,
+    "AlbumName": "Ai Cho Tôi Tình Yêu"
+  },
+  {
+    "Id": 104,
+    "ArtistId": 77,
+    "AlbumName": "Hai Que"
+  },
+  {
+    "Id": 105,
+    "ArtistId": 77,
+    "AlbumName": "Chuyen Hen Ho"
+  },
+  {
+    "Id": 106,
+    "ArtistId": 77,
+    "AlbumName": "Không Phải Tại Chúng Mình"
+  },
+  {
+    "Id": 107,
+    "ArtistId": 77,
+    "AlbumName": "Hà Nội Ngày Tháng Cũ -Tình khúc Song Ngọc-"
+  },
+  {
+    "Id": 108,
+    "ArtistId": 56,
+    "AlbumName": "Tình Khúc Một Thời"
+  },
+  {
+    "Id": 109,
+    "ArtistId": 75,
+    "AlbumName": "Thần Thoại"
+  },
+  {
+    "Id": 110,
+    "ArtistId": 76,
+    "AlbumName": "The Best Of Cẩm Ly- Đan Trường - Mùa Thu Kỷ Niệm"
+  }
+]

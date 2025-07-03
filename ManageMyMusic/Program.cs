@@ -60,6 +60,7 @@ namespace ManageMyMusic
                     services.Configure<ConnectionStrings>(hostContext.Configuration.GetSection("ConnectionStrings"));
 
                     services.AddSingleton<IMusicConfiguration, MusicConfiguration>();
+                    services.AddScoped<IMusicDataExcute, MusicDataExcute>();
 
                     services.AddScoped<IActions, Actions>();
                 });

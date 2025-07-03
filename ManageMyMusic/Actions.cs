@@ -1,8 +1,11 @@
 ﻿using ManageMyMusic.Core;
 using ManageMyMusic.Core.Extensions;
+using ManageMyMusic.Enums;
 using ManageMyMusic.Interfaces;
+using ManageMyMusic.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System;
 using System.IO.Compression;
 using System.Text;
 
@@ -19,10 +22,13 @@ namespace ManageMyMusic
         #endregion
 
         private readonly IMusicConfiguration m_MusicConfiguration;
+        private readonly IMusicDataExcute m_musicDataExcute;
+        private MusicDataModel m_MusicData = new MusicDataModel();
 
-        public Actions(IMusicConfiguration musicConfiguration)
+        public Actions(IMusicConfiguration musicConfiguration, IMusicDataExcute musicDataExcute)
         {
             m_MusicConfiguration = musicConfiguration;
+            m_musicDataExcute = musicDataExcute;
         }
 
         public async Task DoActionsAsync()
@@ -31,7 +37,11 @@ namespace ManageMyMusic
 
             GetAllZipFilesPath();
 
+            m_MusicData = await m_musicDataExcute.GetMusicDataModel();
+
             ExcuteManageMergeMusicFile(m_MusicConfiguration.AppSettings.SourceFolder);
+
+            await m_musicDataExcute.SaveJsonData(JsonConvert.SerializeObject(m_MusicData.Albums), FileDataType.Album);
         }
 
         #region Step 1: Verify Music Structure
@@ -233,7 +243,7 @@ namespace ManageMyMusic
         }
         #endregion
 
-        #region Step 3: 
+        #region Step 3: Read Information from source folder
 
         public void ExcuteManageMergeMusicFile(string path)
         {
@@ -318,31 +328,29 @@ namespace ManageMyMusic
                 {
                     Console.WriteLine($"File: {Path.GetFileName(filePath)}");
 
-                    // --- Common Audio Properties ---
-                    Console.WriteLine($"  Duration: {file.Properties.Duration}");
-                    Console.WriteLine($"  Sample Rate: {file.Properties.AudioSampleRate} Hz");
-                    Console.WriteLine($"  Channels: {file.Properties.AudioChannels}");
-                    Console.WriteLine($"  Bits Per Sample: {file.Properties.BitsPerSample}");
-                    Console.WriteLine($"  Codecs: {string.Join(", ", file.Properties.Codecs)}");
-                    Console.WriteLine($"  Media Types: {file.Properties.MediaTypes}");
+                    //DisplayFileInformation(file);
 
-                    // --- Tag (Metadata) Information (More relevant for FLAC, MP3, etc.) ---
                     if (file.Tag != null)
                     {
-                        Console.WriteLine("\n  --- Metadata (Tags) ---");
-                        Console.WriteLine($"    Title: {FixingErrorUtf8Format(file.Tag.Title)}");
-                        Console.WriteLine($"    Artist(s): {FixingErrorUtf8Format(string.Join(", ", file.Tag.Performers))}");
-                        Console.WriteLine($"    Album: {FixingErrorUtf8Format(file.Tag.Album)}");
-                        Console.WriteLine($"    Year: {file.Tag.Year}");
-                        Console.WriteLine($"    Genre(s): {FixingErrorUtf8Format(string.Join(", ", file.Tag.Genres))}");
-                        Console.WriteLine($"    Track: {file.Tag.Track}");
-                        Console.WriteLine($"    Disc: {file.Tag.Disc}");
-                        Console.WriteLine($"    Comment: {FixingErrorUtf8Format(file.Tag.Comment)}");
-                        Console.WriteLine($"    Lyrics: {FixingErrorUtf8Format(file.Tag.Lyrics)}");
-                    }
-                    else
-                    {
-                        Console.WriteLine("\n  No extensive metadata (tags) found for this file type.");
+                        if(file.Tag.Performers != null && file.Tag.Performers.Any())
+                        {
+                            foreach(var artistName in file.Tag.Performers)
+                            {
+                                string albumName = file.Tag.Album;
+
+                                var musicStructureResponse = m_musicDataExcute.MergeAlbumIntoStructure(artistName, albumName, m_MusicData);
+                                if (musicStructureResponse != null && !string.IsNullOrWhiteSpace(musicStructureResponse.RelativePath))
+                                {
+                                    var destinationDirectory = $"{m_MusicConfiguration.AppSettings.DestinationFolder}//{musicStructureResponse.RelativePath}";
+                                    if (!Directory.Exists(destinationDirectory))
+                                    {
+                                        Directory.CreateDirectory(destinationDirectory);
+                                    }
+
+                                    CopyRenameAndDeleteOriginal(filePath, destinationDirectory, false);
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -360,20 +368,10 @@ namespace ManageMyMusic
             }
         }
 
-        private string FixingErrorUtf8Format(string source)
-        {
-            byte[] rawBytes = Encoding.Default.GetBytes(source); // Get bytes based on current system's default encoding (often similar to 1252)
-                                                                 // Or specifically try: byte[] rawBytes = Encoding.GetEncoding(1252).GetBytes(rawTitle);
-
-            string fixed_UTF8 = Encoding.UTF8.GetString(rawBytes);
-
-            return fixed_UTF8;
-        }
-
         #endregion
 
         #region Step 4: Merge Music Files 
-        public static void CopyRenameAndDeleteOriginal(string sourceFilePath, string destinationDirectory, bool replaceIfExists)
+        public void CopyRenameAndDeleteOriginal(string sourceFilePath, string destinationDirectory, bool replaceIfExists = false)
         {
             if (!File.Exists(sourceFilePath))
             {
@@ -426,7 +424,19 @@ namespace ManageMyMusic
             catch (IOException ex) when (ex.Message.Contains("already exists") && ex.HResult == -2147024816)
             {
                 // Verify new file high quality from existing file or not, if yes then replace
-                Console.WriteLine($"Error: Destination file '{destinationFilePath}' already exists and overwrite was not allowed. {ex.Message}");
+
+                TagLib.File TagLib_New = null;
+                TagLib.File TabLib_Old = null;
+
+                TagLib_New = TagLib.File.Create(sourceFilePath);
+                TabLib_Old = TagLib.File.Create(destinationFilePath);
+
+                var resultCompare = CompareFlacFiles(TagLib_New, TabLib_Old);
+                if (resultCompare == ComparisonResult.NewFileBetter)
+                    CopyRenameAndDeleteOriginal(sourceFilePath, destinationDirectory, true);
+                else
+                    File.Delete(sourceFilePath);
+
             }
             catch (IOException ex)
             {
@@ -438,6 +448,88 @@ namespace ManageMyMusic
             }
         }
 
+        public ComparisonResult CompareFlacFiles(TagLib.File newFile, TagLib.File oldFile)
+        {
+            if (oldFile?.Properties == null || newFile?.Properties == null)
+            {
+                return ComparisonResult.CannotCompare;
+            }
+
+            var old = oldFile.Properties; // Old file properties
+            var _new = newFile.Properties; // New file properties
+
+            // Priority 1: Sample Rate
+            if (_new.AudioSampleRate > old.AudioSampleRate)
+            {
+                Console.WriteLine($"New file has higher Sample Rate ({_new.AudioSampleRate} Hz > {old.AudioSampleRate} Hz).");
+                return ComparisonResult.NewFileBetter;
+            }
+            if (old.AudioSampleRate > _new.AudioSampleRate)
+            {
+                Console.WriteLine($"Old file has higher Sample Rate ({old.AudioSampleRate} Hz > {_new.AudioSampleRate} Hz).");
+                return ComparisonResult.OldFileBetter;
+            }
+            Console.WriteLine($"Sample Rate is the same ({old.AudioSampleRate} Hz).");
+
+            // Priority 2: Bits Per Sample (Bit Depth)
+            if (_new.BitsPerSample > old.BitsPerSample)
+            {
+                Console.WriteLine($"New file has higher Bits Per Sample ({_new.BitsPerSample} bits > {old.BitsPerSample} bits).");
+                return ComparisonResult.NewFileBetter;
+            }
+            if (old.BitsPerSample > _new.BitsPerSample)
+            {
+                Console.WriteLine($"Old file has higher Bits Per Sample ({old.BitsPerSample} bits > {_new.BitsPerSample} bits).");
+                return ComparisonResult.OldFileBetter;
+            }
+            Console.WriteLine($"Bits Per Sample is the same ({old.BitsPerSample} bits).");
+
+            // Priority 3: Bitrate (for lossless, this often correlates with above, but can be a tie-breaker)
+            if (_new.AudioBitrate > old.AudioBitrate)
+            {
+                Console.WriteLine($"New file has higher Bitrate ({_new.AudioBitrate} kbps > {old.AudioBitrate} kbps).");
+                return ComparisonResult.NewFileBetter;
+            }
+            if (old.AudioBitrate > _new.AudioBitrate)
+            {
+                Console.WriteLine($"Old file has higher Bitrate ({old.AudioBitrate} kbps > {_new.AudioBitrate} kbps).");
+                return ComparisonResult.OldFileBetter;
+            }
+            Console.WriteLine($"Bitrate is the same ({old.AudioBitrate} kbps).");
+
+            // If all properties are the same
+            return ComparisonResult.Equal;
+        }
+
+        private void DisplayFileInformation(TagLib.File file)
+        {
+            // --- Common Audio Properties ---
+            Console.WriteLine($"  Duration: {file.Properties.Duration.TotalMilliseconds}");
+            Console.WriteLine($"  Sample Rate: {file.Properties.AudioSampleRate} Hz");
+            Console.WriteLine($"  Channels: {file.Properties.AudioChannels}");
+            Console.WriteLine($"  Bits Per Sample: {file.Properties.BitsPerSample}");
+            Console.WriteLine($"  Codecs: {string.Join(", ", file.Properties.Codecs)}");
+            Console.WriteLine($"  Media Types: {file.Properties.MediaTypes}");
+
+            // --- Tag (Metadata) Information (More relevant for FLAC, MP3, etc.) ---
+            if (file.Tag != null)
+            {
+                Console.WriteLine("\n  --- Metadata (Tags) ---");
+                Console.WriteLine($"    Title: {file.Tag.Title}");
+                Console.WriteLine($"    Artist(s): {string.Join(", ", file.Tag.Performers)}");
+                Console.WriteLine($"    Album: {file.Tag.Album}");
+                Console.WriteLine($"    Year: {file.Tag.Year}");
+                Console.WriteLine($"    Genre(s): {string.Join(", ", file.Tag.Genres)}");
+                Console.WriteLine($"    Track: {file.Tag.Track}");
+                Console.WriteLine($"    Disc: {file.Tag.Disc}");
+                Console.WriteLine($"    Comment: {file.Tag.Comment}");
+                Console.WriteLine($"    Lyrics: {file.Tag.Lyrics}");
+            }
+            else
+            {
+                Console.WriteLine("\n  No extensive metadata (tags) found for this file type.");
+            }
+        }
         #endregion
     }
 }

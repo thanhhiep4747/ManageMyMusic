@@ -1,39 +1,39 @@
 ﻿namespace ManageMyMusic.Models
 {
-    public class MusicData
+    public class MusicDataModel
     {
-        public IList<MusicRegion> Regions { get; set; } = new List<MusicRegion>();
-        public IList<MusicType> Types { get; set; } = new List<MusicType>();
-        public IList<MusicArtist> Artists { get; set; } = new List<MusicArtist>();
-        public IList<MusicAlbum> Albums { get; set; } = new List<MusicAlbum>();
+        public IList<MusicRegionModel> Regions { get; set; } = new List<MusicRegionModel>();
+        public IList<MusicTypeModel> Types { get; set; } = new List<MusicTypeModel>();
+        public IList<MusicArtistModel> Artists { get; set; } = new List<MusicArtistModel>();
+        public IList<MusicAlbumModel> Albums { get; set; } = new List<MusicAlbumModel>();
         public IList<MusicSong> Songs { get; set; } = new List<MusicSong>();
     }
 
-    public class MusicRegion
+    public class MusicRegionModel
     {
         public int Id { get; set; }
         public string? RegionName { get; set; }
     }
 
-    public class MusicType
+    public class MusicTypeModel
     {
         public int Id { get; set; }
         public int RegionId { get; set; }
         public string? TypeName { get; set; }
     }
 
-    public class MusicArtist
+    public class MusicArtistModel
     {
         public int Id { get; set; }
         public int TypeId { get; set; }
         public string? ArtistName { get; set; }
     }
 
-    public class MusicAlbum
+    public class MusicAlbumModel
     {
         public int Id { get; set; }
         public int ArtistId { get; set; }
-        public int AlbumName { get; set; }
+        public string? AlbumName { get; set; }
     }
 
     public class MusicSong
