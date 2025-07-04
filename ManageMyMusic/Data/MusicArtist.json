@@ -1,409 +1,419 @@
 ﻿[
-  {
-    "Id": 1,
-    "TypeId": 1,
-    "ArtistName": "Duong Ngoc Thai"
-  },
-  {
-    "Id": 2,
-    "TypeId": 1,
-    "ArtistName": "Huong Lan"
-  },
-  {
-    "Id": 3,
-    "TypeId": 2,
-    "ArtistName": "AC&M"
-  },
-  {
-    "Id": 4,
-    "TypeId": 2,
-    "ArtistName": "Akira Phan"
-  },
-  {
-    "Id": 5,
-    "TypeId": 2,
-    "ArtistName": "Bui Anh Tuan"
-  },
-  {
-    "Id": 6,
-    "TypeId": 2,
-    "ArtistName": "Cao Thai Son"
-  },
-  {
-    "Id": 7,
-    "TypeId": 2,
-    "ArtistName": "Dinh Dung"
-  },
-  {
-    "Id": 8,
-    "TypeId": 2,
-    "ArtistName": "Dinh Nguyen"
-  },
-  {
-    "Id": 9,
-    "TypeId": 2,
-    "ArtistName": "Du Thien"
-  },
-  {
-    "Id": 10,
-    "TypeId": 2,
-    "ArtistName": "Duong Trieu Vu"
-  },
-  {
-    "Id": 11,
-    "TypeId": 2,
-    "ArtistName": "Duy Manh"
-  },
-  {
-    "Id": 12,
-    "TypeId": 2,
-    "ArtistName": "GMC"
-  },
-  {
-    "Id": 13,
-    "TypeId": 2,
-    "ArtistName": "Ha Anh Tuan"
-  },
-  {
-    "Id": 14,
-    "TypeId": 2,
-    "ArtistName": "Hien Ho"
-  },
-  {
-    "Id": 15,
-    "TypeId": 2,
-    "ArtistName": "Hien Thuc"
-  },
-  {
-    "Id": 16,
-    "TypeId": 2,
-    "ArtistName": "Ho Ngoc Ha"
-  },
-  {
-    "Id": 17,
-    "TypeId": 2,
-    "ArtistName": "Ho Quynh Huong"
-  },
-  {
-    "Id": 18,
-    "TypeId": 2,
-    "ArtistName": "Ho Trung Dung"
-  },
-  {
-    "Id": 19,
-    "TypeId": 2,
-    "ArtistName": "Hoai Lam"
-  },
-  {
-    "Id": 20,
-    "TypeId": 2,
-    "ArtistName": "Hoang Bach"
-  },
-  {
-    "Id": 21,
-    "TypeId": 2,
-    "ArtistName": "Hoang Hai"
-  },
-  {
-    "Id": 22,
-    "TypeId": 2,
-    "ArtistName": "Hoang Hiep"
-  },
-  {
-    "Id": 23,
-    "TypeId": 2,
-    "ArtistName": "Hoang Thuc Linh"
-  },
-  {
-    "Id": 24,
-    "TypeId": 2,
-    "ArtistName": "Hoang Thuy Linh"
-  },
-  {
-    "Id": 25,
-    "TypeId": 2,
-    "ArtistName": "Hong Ngoc"
-  },
-  {
-    "Id": 26,
-    "TypeId": 2,
-    "ArtistName": "Hong Nhung"
-  },
-  {
-    "Id": 27,
-    "TypeId": 2,
-    "ArtistName": "Huong Giang"
-  },
-  {
-    "Id": 28,
-    "TypeId": 2,
-    "ArtistName": "Huong Ly"
-  },
-  {
-    "Id": 29,
-    "TypeId": 2,
-    "ArtistName": "Huong Thuy"
-  },
-  {
-    "Id": 30,
-    "TypeId": 2,
-    "ArtistName": "Huong Tram"
-  },
-  {
-    "Id": 31,
-    "TypeId": 2,
-    "ArtistName": "Jimmii Nguyen"
-  },
-  {
-    "Id": 32,
-    "TypeId": 2,
-    "ArtistName": "Kasim Hoang Vu"
-  },
-  {
-    "Id": 33,
-    "TypeId": 2,
-    "ArtistName": "Khac Viet"
-  },
-  {
-    "Id": 34,
-    "TypeId": 2,
-    "ArtistName": "Khang Viet"
-  },
-  {
-    "Id": 35,
-    "TypeId": 2,
-    "ArtistName": "Khanh Phuong"
-  },
-  {
-    "Id": 36,
-    "TypeId": 2,
-    "ArtistName": "Khong Tu Quynh"
-  },
-  {
-    "Id": 37,
-    "TypeId": 2,
-    "ArtistName": "Lam Chan Huy"
-  },
-  {
-    "Id": 38,
-    "TypeId": 2,
-    "ArtistName": "Lam Hung"
-  },
-  {
-    "Id": 39,
-    "TypeId": 2,
-    "ArtistName": "Lam Nhat Tien"
-  },
-  {
-    "Id": 40,
-    "TypeId": 2,
-    "ArtistName": "Lam Truong"
-  },
-  {
-    "Id": 41,
-    "TypeId": 2,
-    "ArtistName": "Lam Vu"
-  },
-  {
-    "Id": 42,
-    "TypeId": 2,
-    "ArtistName": "Lan Nha"
-  },
-  {
-    "Id": 43,
-    "TypeId": 2,
-    "ArtistName": "Le Hieu"
-  },
-  {
-    "Id": 44,
-    "TypeId": 2,
-    "ArtistName": "Luong Bich Huu"
-  },
-  {
-    "Id": 45,
-    "TypeId": 2,
-    "ArtistName": "Ly Hai"
-  },
-  {
-    "Id": 46,
-    "TypeId": 2,
-    "ArtistName": "Mr. Siro"
-  },
-  {
-    "Id": 47,
-    "TypeId": 2,
-    "ArtistName": "Nguyen Phi Hung"
-  },
-  {
-    "Id": 48,
-    "TypeId": 2,
-    "ArtistName": "Nguyen Thach Thao"
-  },
-  {
-    "Id": 49,
-    "TypeId": 2,
-    "ArtistName": "Nhat Tinh Anh"
-  },
-  {
-    "Id": 50,
-    "TypeId": 2,
-    "ArtistName": "Noo Phuoc Thinh"
-  },
-  {
-    "Id": 51,
-    "TypeId": 2,
-    "ArtistName": "Pham Khanh Hung"
-  },
-  {
-    "Id": 52,
-    "TypeId": 2,
-    "ArtistName": "Phan Dinh Tung"
-  },
-  {
+    {
+        "Id": 1,
+        "TypeId": 1,
+        "ArtistName": "Duong Ngoc Thai"
+    },
+    {
+        "Id": 2,
+        "TypeId": 1,
+        "ArtistName": "Huong Lan"
+    },
+    {
+        "Id": 3,
+        "TypeId": 2,
+        "ArtistName": "AC&M"
+    },
+    {
+        "Id": 4,
+        "TypeId": 2,
+        "ArtistName": "Akira Phan"
+    },
+    {
+        "Id": 5,
+        "TypeId": 2,
+        "ArtistName": "Bui Anh Tuan"
+    },
+    {
+        "Id": 6,
+        "TypeId": 2,
+        "ArtistName": "Cao Thai Son"
+    },
+    {
+        "Id": 7,
+        "TypeId": 2,
+        "ArtistName": "Dinh Dung"
+    },
+    {
+        "Id": 8,
+        "TypeId": 2,
+        "ArtistName": "Dinh Nguyen"
+    },
+    {
+        "Id": 9,
+        "TypeId": 2,
+        "ArtistName": "Du Thien"
+    },
+    {
+        "Id": 10,
+        "TypeId": 2,
+        "ArtistName": "Duong Trieu Vu"
+    },
+    {
+        "Id": 11,
+        "TypeId": 2,
+        "ArtistName": "Duy Manh"
+    },
+    {
+        "Id": 12,
+        "TypeId": 2,
+        "ArtistName": "GMC"
+    },
+    {
+        "Id": 13,
+        "TypeId": 2,
+        "ArtistName": "Ha Anh Tuan"
+    },
+    {
+        "Id": 14,
+        "TypeId": 2,
+        "ArtistName": "Hien Ho"
+    },
+    {
+        "Id": 15,
+        "TypeId": 2,
+        "ArtistName": "Hien Thuc"
+    },
+    {
+        "Id": 16,
+        "TypeId": 2,
+        "ArtistName": "Ho Ngoc Ha"
+    },
+    {
+        "Id": 17,
+        "TypeId": 2,
+        "ArtistName": "Ho Quynh Huong"
+    },
+    {
+        "Id": 18,
+        "TypeId": 2,
+        "ArtistName": "Ho Trung Dung"
+    },
+    {
+        "Id": 19,
+        "TypeId": 2,
+        "ArtistName": "Hoai Lam"
+    },
+    {
+        "Id": 20,
+        "TypeId": 2,
+        "ArtistName": "Hoang Bach"
+    },
+    {
+        "Id": 21,
+        "TypeId": 2,
+        "ArtistName": "Hoang Hai"
+    },
+    {
+        "Id": 22,
+        "TypeId": 2,
+        "ArtistName": "Hoang Hiep"
+    },
+    {
+        "Id": 23,
+        "TypeId": 2,
+        "ArtistName": "Hoang Thuc Linh"
+    },
+    {
+        "Id": 24,
+        "TypeId": 2,
+        "ArtistName": "Hoang Thuy Linh"
+    },
+    {
+        "Id": 25,
+        "TypeId": 2,
+        "ArtistName": "Hong Ngoc"
+    },
+    {
+        "Id": 26,
+        "TypeId": 2,
+        "ArtistName": "Hong Nhung"
+    },
+    {
+        "Id": 27,
+        "TypeId": 2,
+        "ArtistName": "Huong Giang"
+    },
+    {
+        "Id": 28,
+        "TypeId": 2,
+        "ArtistName": "Huong Ly"
+    },
+    {
+        "Id": 29,
+        "TypeId": 2,
+        "ArtistName": "Huong Thuy"
+    },
+    {
+        "Id": 30,
+        "TypeId": 2,
+        "ArtistName": "Huong Tram"
+    },
+    {
+        "Id": 31,
+        "TypeId": 2,
+        "ArtistName": "Jimmii Nguyen"
+    },
+    {
+        "Id": 32,
+        "TypeId": 2,
+        "ArtistName": "Kasim Hoang Vu"
+    },
+    {
+        "Id": 33,
+        "TypeId": 2,
+        "ArtistName": "Khac Viet"
+    },
+    {
+        "Id": 34,
+        "TypeId": 2,
+        "ArtistName": "Khang Viet"
+    },
+    {
+        "Id": 35,
+        "TypeId": 2,
+        "ArtistName": "Khanh Phuong"
+    },
+    {
+        "Id": 36,
+        "TypeId": 2,
+        "ArtistName": "Khong Tu Quynh"
+    },
+    {
+        "Id": 37,
+        "TypeId": 2,
+        "ArtistName": "Lam Chan Huy"
+    },
+    {
+        "Id": 38,
+        "TypeId": 2,
+        "ArtistName": "Lam Hung"
+    },
+    {
+        "Id": 39,
+        "TypeId": 2,
+        "ArtistName": "Lam Nhat Tien"
+    },
+    {
+        "Id": 40,
+        "TypeId": 2,
+        "ArtistName": "Lam Truong"
+    },
+    {
+        "Id": 41,
+        "TypeId": 2,
+        "ArtistName": "Lam Vu"
+    },
+    {
+        "Id": 42,
+        "TypeId": 2,
+        "ArtistName": "Lan Nha"
+    },
+    {
+        "Id": 43,
+        "TypeId": 2,
+        "ArtistName": "Le Hieu"
+    },
+    {
+        "Id": 44,
+        "TypeId": 2,
+        "ArtistName": "Luong Bich Huu"
+    },
+    {
+        "Id": 45,
+        "TypeId": 2,
+        "ArtistName": "Ly Hai"
+    },
+    {
+        "Id": 46,
+        "TypeId": 2,
+        "ArtistName": "Mr. Siro"
+    },
+    {
+        "Id": 47,
+        "TypeId": 2,
+        "ArtistName": "Nguyen Phi Hung"
+    },
+    {
+        "Id": 48,
+        "TypeId": 2,
+        "ArtistName": "Nguyen Thach Thao"
+    },
+    {
+        "Id": 49,
+        "TypeId": 2,
+        "ArtistName": "Nhat Tinh Anh"
+    },
+    {
+        "Id": 50,
+        "TypeId": 2,
+        "ArtistName": "Noo Phuoc Thinh"
+    },
+    {
+        "Id": 51,
+        "TypeId": 2,
+        "ArtistName": "Pham Khanh Hung"
+    },
+    {
+        "Id": 52,
+        "TypeId": 2,
+        "ArtistName": "Phan Dinh Tung"
+    },
+    {
 
-    "Id": 53,
-    "TypeId": 2,
-    "ArtistName": "Phan Manh Quynh"
-  },
-  {
-    "Id": 54,
-    "TypeId": 2,
-    "ArtistName": "Quang Ha"
-  },
-  {
-    "Id": 55,
-    "TypeId": 2,
-    "ArtistName": "Quang Vinh"
-  },
-  {
-    "Id": 56,
-    "TypeId": 2,
-    "ArtistName": "Quoc Thien"
-  },
-  {
-    "Id": 57,
-    "TypeId": 2,
-    "ArtistName": "Son Tung M-TP"
-  },
-  {
-    "Id": 58,
-    "TypeId": 2,
-    "ArtistName": "Soobin"
-  },
-  {
-    "Id": 59,
-    "TypeId": 2,
-    "ArtistName": "Thanh Ngoc"
-  },
-  {
-    "Id": 60,
-    "TypeId": 2,
-    "ArtistName": "Thanh Thao"
-  },
-  {
-    "Id": 61,
-    "TypeId": 2,
-    "ArtistName": "The Son"
-  },
-  {
-    "Id": 62,
-    "TypeId": 2,
-    "ArtistName": "Toc Tien"
-  },
-  {
+        "Id": 53,
+        "TypeId": 2,
+        "ArtistName": "Phan Manh Quynh"
+    },
+    {
+        "Id": 54,
+        "TypeId": 2,
+        "ArtistName": "Quang Ha"
+    },
+    {
+        "Id": 55,
+        "TypeId": 2,
+        "ArtistName": "Quang Vinh"
+    },
+    {
+        "Id": 56,
+        "TypeId": 2,
+        "ArtistName": "Quoc Thien"
+    },
+    {
+        "Id": 57,
+        "TypeId": 2,
+        "ArtistName": "Son Tung M-TP"
+    },
+    {
+        "Id": 58,
+        "TypeId": 2,
+        "ArtistName": "Soobin"
+    },
+    {
+        "Id": 59,
+        "TypeId": 2,
+        "ArtistName": "Thanh Ngoc"
+    },
+    {
+        "Id": 60,
+        "TypeId": 2,
+        "ArtistName": "Thanh Thao"
+    },
+    {
+        "Id": 61,
+        "TypeId": 2,
+        "ArtistName": "The Son"
+    },
+    {
+        "Id": 62,
+        "TypeId": 2,
+        "ArtistName": "Toc Tien"
+    },
+    {
 
-    "Id": 63,
-    "TypeId": 2,
-    "ArtistName": "Tran Tam"
-  },
-  {
-    "Id": 64,
-    "TypeId": 2,
-    "ArtistName": "Trinh Thang Binh"
-  },
-  {
-    "Id": 65,
-    "TypeId": 2,
-    "ArtistName": "Truc Nhan"
-  },
-  {
-    "Id": 66,
-    "TypeId": 2,
-    "ArtistName": "Trung Quan"
-  },
-  {
-    "Id": 67,
-    "TypeId": 2,
-    "ArtistName": "Tuan Hung"
-  },
-  {
-    "Id": 68,
-    "TypeId": 2,
-    "ArtistName": "Ung Hoang Phuc"
-  },
-  {
-    "Id": 69,
-    "TypeId": 2,
-    "ArtistName": "Uyen Linh"
-  },
-  {
-    "Id": 70,
-    "TypeId": 5,
-    "ArtistName": "Anh Tuyet"
-  },
-  {
-    "Id": 71,
-    "TypeId": 5,
-    "ArtistName": "Cam Van"
-  },
-  {
-    "Id": 72,
-    "TypeId": 5,
-    "ArtistName": "Trinh Cong Son"
-  },
-  {
-    "Id": 73,
-    "TypeId": 5,
-    "ArtistName": "Tran Thai Hoa"
-  },
-  {
-    "Id": 74,
-    "TypeId": 2,
-    "ArtistName": "My Tam"
-  },
-  {
-    "Id": 75,
-    "TypeId": 1,
-    "ArtistName": "Phi Nhung"
-  },
-  {
-    "Id": 75,
-    "TypeId": 1,
-    "ArtistName": "Phuong Phuong Thao"
-  },
-  {
-    "Id": 76,
-    "TypeId": 2,
-    "ArtistName": "Dan Truong"
-  },
-  {
-    "Id": 77,
-    "TypeId": 1,
-    "ArtistName": "Quang Le"
-  },
-  {
-    "Id": 78,
-    "TypeId": 2,
-    "ArtistName": "Vo Ha Tram"
-  },
-  {
-    "Id": 79,
-    "TypeId": 2,
-    "ArtistName": "Van Quang Long"
-  },
-  {
-    "Id": 80,
-    "TypeId": 2,
-    "ArtistName": "Cam Ly"
-  }
+        "Id": 63,
+        "TypeId": 2,
+        "ArtistName": "Tran Tam"
+    },
+    {
+        "Id": 64,
+        "TypeId": 2,
+        "ArtistName": "Trinh Thang Binh"
+    },
+    {
+        "Id": 65,
+        "TypeId": 2,
+        "ArtistName": "Truc Nhan"
+    },
+    {
+        "Id": 66,
+        "TypeId": 2,
+        "ArtistName": "Trung Quan"
+    },
+    {
+        "Id": 67,
+        "TypeId": 2,
+        "ArtistName": "Tuan Hung"
+    },
+    {
+        "Id": 68,
+        "TypeId": 2,
+        "ArtistName": "Ung Hoang Phuc"
+    },
+    {
+        "Id": 69,
+        "TypeId": 2,
+        "ArtistName": "Uyen Linh"
+    },
+    {
+        "Id": 70,
+        "TypeId": 5,
+        "ArtistName": "Anh Tuyet"
+    },
+    {
+        "Id": 71,
+        "TypeId": 5,
+        "ArtistName": "Cam Van"
+    },
+    {
+        "Id": 72,
+        "TypeId": 5,
+        "ArtistName": "Trinh Cong Son"
+    },
+    {
+        "Id": 73,
+        "TypeId": 5,
+        "ArtistName": "Tran Thai Hoa"
+    },
+    {
+        "Id": 74,
+        "TypeId": 2,
+        "ArtistName": "My Tam"
+    },
+    {
+        "Id": 75,
+        "TypeId": 1,
+        "ArtistName": "Phi Nhung"
+    },
+    {
+        "Id": 75,
+        "TypeId": 1,
+        "ArtistName": "Phuong Phuong Thao"
+    },
+    {
+        "Id": 76,
+        "TypeId": 2,
+        "ArtistName": "Dan Truong"
+    },
+    {
+        "Id": 77,
+        "TypeId": 1,
+        "ArtistName": "Quang Le"
+    },
+    {
+        "Id": 78,
+        "TypeId": 2,
+        "ArtistName": "Vo Ha Tram"
+    },
+    {
+        "Id": 79,
+        "TypeId": 2,
+        "ArtistName": "Van Quang Long"
+    },
+    {
+        "Id": 80,
+        "TypeId": 2,
+        "ArtistName": "Cam Ly"
+    },
+    {
+        "Id": 81,
+        "TypeId": 2,
+        "ArtistName": "Duc Phuc"
+    },
+    {
+        "Id": 82,
+        "TypeId": 2,
+        "ArtistName": "Ha Nhi"
+    }
 ]

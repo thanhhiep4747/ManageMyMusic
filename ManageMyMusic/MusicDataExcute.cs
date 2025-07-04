@@ -271,7 +271,7 @@ namespace ManageMyMusic
             foreach (var artist in musicData.Artists)
             {
                 if (string.IsNullOrWhiteSpace(artist.ArtistName)) continue;
-                
+
                 var existing = CompareEqualStringIgnoreSpecialChar(artistName, artist.ArtistName);
                 if (existing)
                 {

@@ -334,27 +334,33 @@ namespace ManageMyMusic
                         {
                             for (int i = 0; i < file.Tag.Performers.Count(); i++)
                             {
-                                string artistName = file.Tag.Performers[i];
-                                bool isLast = (i == file.Tag.Performers.Count() - 1);
-
-                                bool deletesourcefile = false;
-                                if (isLast)
+                                char[] delimitersChar = { ',', '&' };
+                                var artistNames = file.Tag.Performers[i].Split(delimitersChar);
+                                for (int j = 0; j < artistNames.Length; j++)
                                 {
-                                    deletesourcefile = true;
-                                }
+                                    var artistName = artistNames[j].Trim();
+                                    bool isLast = (i == file.Tag.Performers.Count() - 1) && (j == artistNames.Length - 1);
 
-                                string albumName = file.Tag.Album;
-
-                                var musicStructureResponse = m_musicDataExcute.MergeAlbumIntoStructure(artistName, albumName, m_MusicData);
-                                if (musicStructureResponse != null && !string.IsNullOrWhiteSpace(musicStructureResponse.RelativePath))
-                                {
-                                    var destinationDirectory = $"{m_MusicConfiguration.AppSettings.DestinationFolder}//{musicStructureResponse.RelativePath}";
-                                    if (!Directory.Exists(destinationDirectory))
+                                    bool deletesourcefile = false;
+                                    if (isLast)
                                     {
-                                        Directory.CreateDirectory(destinationDirectory);
+                                        deletesourcefile = true;
                                     }
 
-                                    CopyRenameAndDeleteOriginal(filePath, destinationDirectory, deletesourcefile, false);
+                                    string albumName = file.Tag.Album;
+
+                                    var musicStructureResponse = m_musicDataExcute.MergeAlbumIntoStructure(artistName, albumName, m_MusicData);
+                                    if (musicStructureResponse != null && !string.IsNullOrWhiteSpace(musicStructureResponse.RelativePath))
+                                    {
+                                        var destinationDirectory = $"{m_MusicConfiguration.AppSettings.DestinationFolder}//{musicStructureResponse.RelativePath}";
+                                        if (!Directory.Exists(destinationDirectory))
+                                        {
+                                            Directory.CreateDirectory(destinationDirectory);
+                                        }
+
+                                        CopyRenameAndDeleteOriginal(filePath, destinationDirectory, deletesourcefile, false);
+                                    }
+
                                 }
                             }
                         }
